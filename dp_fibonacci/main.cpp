@@ -11,7 +11,7 @@ void fibonacci(){
     while(1){
         int current = fib_vec.size();
         fib_it = fib_vec[current-1] + fib_vec[current-2];
-        if(fib_vec[current-2] > INT_FAST64_MAX){
+        if(fib_vec[current-1] > INT_FAST64_MAX){
             break;
         }
         fib_vec.push_back(fib_it);
