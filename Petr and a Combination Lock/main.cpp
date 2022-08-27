@@ -19,7 +19,7 @@ int main(){
 
         if(sum % 360 == 0){
             std::cout << "YES" << std::endl;
-            return 1;
+            return 0;
         }
     }
     std::cout << "NO" << std::endl;
