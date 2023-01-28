@@ -1,0 +1,212 @@
+main.cpp:32:5: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+    }
+    ^
+main.cpp:66:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto v:this->voltas){
+            ^
+main.cpp:66:19: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto v:this->voltas){
+                  ^
+main.cpp:75:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto t:voltas){
+            ^
+main.cpp:75:19: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto t:voltas){
+                  ^
+main.cpp:80:5: warning: non-void function does not return a value [-Wreturn-type]
+    }
+    ^
+main.cpp:99:13: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for(auto p:this->pilotos){
+            ^
+main.cpp:99:19: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for(auto p:this->pilotos){
+                  ^
+In file included from main.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:214:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:522:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:653:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional:490:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/search.h:13:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h:76:71: error: invalid operands to binary expression ('const Pilot' and 'const Pilot')
+    bool operator()(const _T1& __x, const _T1& __y) const {return __x < __y;}
+                                                                  ~~~ ^ ~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:39:13: note: in instantiation of member function 'std::__less<Pilot>::operator()' requested here
+        if (__comp(*__i, *__first))
+            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:516:16: note: in instantiation of function template specialization 'std::__partial_sort<std::__less<Pilot> &, std::__wrap_iter<Pilot *> >' requested here
+        _VSTD::__partial_sort<_Comp_ref>(__first, __last, __last, _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:337:1: note: candidate template ignored: could not match 'pair<type-parameter-0-0, type-parameter-0-1>' against 'const Pilot'
+operator< (const pair<_T1,_T2>& __x, const pair<_T1,_T2>& __y)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:183:6: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'const Pilot'
+bool operator<(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter1>& __y) _NOEXCEPT
+     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:194:6: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'const Pilot'
+bool operator<(const __wrap_iter<_Iter1>& __x, const __wrap_iter<_Iter2>& __y) _NOEXCEPT
+     ^
+main.cpp:52:10: note: candidate function not viable: 'this' argument has type 'const Pilot', but method is not marked const
+    bool operator < (Pilot &b){
+         ^
+In file included from main.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:214:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:522:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:714:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/nth_element.h:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:16:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:17:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort_heap.h:15:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:37:9: error: no matching function for call to '__sift_down'
+        _VSTD::__sift_down<_Compare>(__first, __last, __comp, __len - 1, __first);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort_heap.h:34:16: note: in instantiation of function template specialization 'std::__pop_heap<std::__less<Pilot> &, std::__wrap_iter<Pilot *> >' requested here
+        _VSTD::__pop_heap<_Compare>(__first, __last, __comp, __n);
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:45:12: note: in instantiation of function template specialization 'std::__sort_heap<std::__less<Pilot> &, std::__wrap_iter<Pilot *> >' requested here
+    _VSTD::__sort_heap<_Compare>(__first, __middle, __comp);
+           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:516:16: note: in instantiation of function template specialization 'std::__partial_sort<std::__less<Pilot> &, std::__wrap_iter<Pilot *> >' requested here
+        _VSTD::__partial_sort<_Comp_ref>(__first, __last, __last, _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sift_down.h:27:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _RandomAccessIterator = std::__wrap_iter<Pilot *>]
+__sift_down(_RandomAccessIterator __first, _RandomAccessIterator /*__last*/,
+^
+In file included from main.cpp:1:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:37:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:214:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale:15:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:522:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:714:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/nth_element.h:15:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:75:20: error: no matching function for call to '__sort3'
+    unsigned __r = _VSTD::__sort3<_Compare>(__x1, __x2, __x3, __c);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:295:20: note: in instantiation of function template specialization 'std::__sort4<std::__less<Pilot> &, Pilot *>' requested here
+            _VSTD::__sort4<_Compare>(__first, __first+1, __first+2, --__last, __comp);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:518:16: note: in instantiation of function template specialization 'std::__sort<std::__less<Pilot> &, Pilot *>' requested here
+        _VSTD::__sort<_Comp_ref>(_VSTD::__unwrap_iter(__first), _VSTD::__unwrap_iter(__last), _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:35:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:102:20: error: no matching function for call to '__sort4'
+    unsigned __r = _VSTD::__sort4<_Compare>(__x1, __x2, __x3, __x4, __c);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:298:20: note: in instantiation of function template specialization 'std::__sort5<std::__less<Pilot> &, Pilot *>' requested here
+            _VSTD::__sort5<_Compare>(__first, __first+1, __first+2, __first+3, --__last, __comp);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:518:16: note: in instantiation of function template specialization 'std::__sort<std::__less<Pilot> &, Pilot *>' requested here
+        _VSTD::__sort<_Comp_ref>(_VSTD::__unwrap_iter(__first), _VSTD::__unwrap_iter(__last), _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:72:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort4(_ForwardIterator __x1, _ForwardIterator __x2, _ForwardIterator __x3,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:167:5: error: no matching function for call to '__sort3'
+    _VSTD::__sort3<_Compare>(__first, __first+1, __j, __comp);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:303:20: note: in instantiation of function template specialization 'std::__insertion_sort_3<std::__less<Pilot> &, Pilot *>' requested here
+            _VSTD::__insertion_sort_3<_Compare>(__first, __last, __comp);
+                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:518:16: note: in instantiation of function template specialization 'std::__sort<std::__less<Pilot> &, Pilot *>' requested here
+        _VSTD::__sort<_Comp_ref>(_VSTD::__unwrap_iter(__first), _VSTD::__unwrap_iter(__last), _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:35:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:200:9: error: no matching function for call to '__sort3'
+        _VSTD::__sort3<_Compare>(__first, __first+1, --__last, __comp);
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:429:32: note: in instantiation of function template specialization 'std::__insertion_sort_incomplete<std::__less<Pilot> &, Pilot *>' requested here
+            bool __fs = _VSTD::__insertion_sort_incomplete<_Compare>(__first, __i, __comp);
+                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:518:16: note: in instantiation of function template specialization 'std::__sort<std::__less<Pilot> &, Pilot *>' requested here
+        _VSTD::__sort<_Comp_ref>(_VSTD::__unwrap_iter(__first), _VSTD::__unwrap_iter(__last), _Comp_ref(__comp));
+               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:527:12: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *>, std::__less<Pilot> >' requested here
+    _VSTD::sort(__first, __last, __less<typename iterator_traits<_RandomAccessIterator>::value_type>());
+           ^
+main.cpp:92:9: note: in instantiation of function template specialization 'std::sort<std::__wrap_iter<Pilot *> >' requested here
+        sort(pilotos.begin(), pilotos.end());
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:35:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:203:9: error: no matching function for call to '__sort4'
+        _VSTD::__sort4<_Compare>(__first, __first+1, __first+2, --__last, __comp);
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:72:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort4(_ForwardIterator __x1, _ForwardIterator __x2, _ForwardIterator __x3,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:206:9: error: no matching function for call to '__sort5'
+        _VSTD::__sort5<_Compare>(__first, __first+1, __first+2, __first+3, --__last, __comp);
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:99:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort5(_ForwardIterator __x1, _ForwardIterator __x2, _ForwardIterator __x3,
+^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:211:5: error: no matching function for call to '__sort3'
+    _VSTD::__sort3<_Compare>(__first, __first+1, __j, __comp);
+    ^~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:858:15: note: expanded from macro '_VSTD'
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sort.h:35:1: note: candidate template ignored: substitution failure [with _Compare = std::__less<Pilot> &, _ForwardIterator = Pilot *]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+8 warnings and 9 errors generated.
